@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Topics</title>
+    <style>
+        h1 {
+            color: blue;
+            text-shadow: 1px 1px 2px;
+            text-align: center;
+        }
+        #display {
+            width: 100%;
+            height: 250px;
+            background-color: whitesmoke;
+            background-image: url(./display1.JPG);
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: right;
+        }
+        #display p {
+            text-align: left;
+            line-height: 15px;
+            padding: 30px;
+        }
+        #layout {
+            width: 100%;
+            height: 300px;
+        }
+
+        @media screen and (max-width:480px) {
+            #display {
+            width: 100%;
+            height: 350px;
+            background-color: whitesmoke;
+            background-image: url(./display1.JPG);
+            background-repeat: no-repeat;
+            background-size: 100% 50%;
+            background-position: top;
+        }
+        #display p {
+            text-align: justify;
+            line-height: 16px;
+            padding: 0;
+            position: relative;
+            top: 185px;
+            margin: 10px;
+        }
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Topics</h1>
+    
+    <div id="display">
+     <p><b>Inline</b> displays an element as an inline element. Any height and width properties will have no effect.</p>
+     <p><b>Inline-Block</b> displays an element as an inline-level block container. You CAN set height and width values.</p>
+     <p><b>Block</b> displays an element as a block element. It starts starts on a new line and takes up the whole width.</p>
+    </div>
+
+    <div id="layout">
+      
+    </div>
+</body>
+</html>
